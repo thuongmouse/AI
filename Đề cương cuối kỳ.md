@@ -248,7 +248,7 @@ clauses
   tongchan(0, K) :- K = 0, !.
   tongchan(0, 0) :- !.
   tongchan(N, K) :- N mod 2 = 1, N1 = N - 1, tongchan(N1, K).
-  tongchan(N, K) :- N mod 2 = 0, N1 = N - 2, tongchan(N1, K1), K = K1 + N.
+  tongchan(N, K) :- N mod 2 = 0, N1 = N - 1, tongchan(N1, K1), K = K1 + N.
 ```
 
 ### Tìm tổng của các số nguyên chẵn từ M đến N?
